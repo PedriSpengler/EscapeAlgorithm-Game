@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="assets/logo.png" alt="" class="logo"></a>
+        <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <a href="#"><img src="assets/euaimg.jpg" alt="" class="idiomaEUA"></a>
+            <a href="#"><img src="assets/polygono.png" alt="" class="polygono" ></a>
+        </ul>
+    </nav>
+
+    <!--Section Home-->
+    <section class="home">
+        <img src="assets/home.jpg" alt="">
+        <h1>Escape Algorithm</h1>
+
+        <div class="buttons">
+            <a href="#" id="play-now" onclick="open_page('menuScreen')">Play Now</a>
+            <a href="#">About Us</a>
+            <a href="#">How to Play</a>
+            <a href="#">Options</a>
+        </div>
+
+    </section>
+
+    <!--Section Menu-->
+
+    <section id="menuScreen">
+        <img src="assets/home.jpg" class="fundo" alt="">
+        <ul class="fases">
+            <li class="close">
+                <a id="closebutton" onclick="close_page('menuScreen')">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8516 8.59375L16.7378 3.70752C17.3374 3.10791 17.3374 2.13574 16.7378 1.53564L15.6519 0.449707C15.0522 -0.149902 14.0801 -0.149902 13.48 0.449707L8.59375 5.33594L3.70752 0.449707C3.10791 -0.149902 2.13574 -0.149902 1.53564 0.449707L0.449707 1.53564C-0.149902 2.13525 -0.149902 3.10742 0.449707 3.70752L5.33594 8.59375L0.449707 13.48C-0.149902 14.0796 -0.149902 15.0518 0.449707 15.6519L1.53564 16.7378C2.13525 17.3374 3.10791 17.3374 3.70752 16.7378L8.59375 11.8516L13.48 16.7378C14.0796 17.3374 15.0522 17.3374 15.6519 16.7378L16.7378 15.6519C17.3374 15.0522 17.3374 14.0801 16.7378 13.48L11.8516 8.59375Z" fill="white"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="imagem-container" id="AustonIsland">
+                <a href="#"><img src="assets/fase1.jpg" alt="" id="fase-1"></a>
+                <h2 class="h2fase1">Auston Island</h2>
+                </div>
+            </li>
+            <li class="imagem-container">
+                <a href="#"><img src="assets/fase2.jpg" alt="" id="fase-2"></a>
+                <h2 class="h2fase2">Kempeus Island</h2>
+                <a href="#"><img src="assets/cadeado.png" alt="" class="locked"></a>
+            </li>
+            <li class="imagem-container">
+                <a href="#"><img src="assets/fase3.jpg" alt="" id="fase-3"></a>
+                <h2 class="h2fase3">Stempesz Island</h2>
+                <a href="#"><img src="assets/cadeado.png" alt="" class="locked"></a>
+
+            </li>
+        </ul>
+    </section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

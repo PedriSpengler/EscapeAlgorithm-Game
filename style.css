@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 204vh;
+    position: fixed;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: #4F1699; 
+    z-index: 1000; 
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    margin-left: 20px;
+    display: flex;
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li{
+    margin-right: 43px;
+}
+
+nav ul li a{
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.idiomaEUA{
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.polygono{
+    margin-top: 6.8px;
+    margin-left: 5.5px;
+    max-width: 1.1rem;
+}
+
+.home{
+    top: 64px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.home img {
+    width: 204vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-family: 'Kameron', serif;
+    display: flex;
+    position: relative;
+    color: #FFF;
+    font-size: 94px;
+    justify-content: center;
+    top: 9rem;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 15rem;
+    height: 16rem;
+}
+
+.buttons a{
+    color: #FFF;
+    margin: 1rem;
+    background-color: transparent;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:3.2px solid #FFF;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: transform 0.4s ease;
+}
+
+.buttons a:hover{
+    transform: scale(1.4);
+}
+
+#menuScreen{
+  position: absolute;
+  height: 80vh;
+  background-color: #ccc;
+  margin-top: 4rem;
+  height: 100vh;
+  width: 204vh;
+  justify-content: center;
+  align-items: center;
+  top: 0vh;
+  transition: top 0.5s ease;
+}
+
+#menuScreen.open{
+  top: -100vh;
+  z-index: 2;
+}
+
+#menuScreen .fundo {
+  width: 204vh;
+  height: 100vh;
+  position: fixed;
+  filter: brightness(0.4);
+}
+
+.fases #closebutton{
+  position: absolute;
+  top: 15px;
+  right: 3.5rem;
+  z-index: 4;
+  cursor: pointer;
+}
+
+#menuScreen.remove{
+  top: 0vh;
+  z-index: -1;
+}
+
+#menuScreen.hidden{
+  display: none;
+}
+
+.fases {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 46%;
+  left: 49.58%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+.fases .imagem-container {
+  width: 192vh;
+  height: 28vh;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.fases img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.fases #fase-1{
+  object-position: 20% 50%;
+}
+
+.fases #AustonIsland:hover{
+  transform: scale(1.02);
+  z-index: 3;
+}
+
+.fases #fase-2{
+  object-position: 20% 60%;
+  filter: brightness(0.6);
+}
+
+.fases #fase-3{
+  object-position: 20% 68%;
+  filter: brightness(0.6);
+}
+
+h2{
+  display: flex;
+  text-align: center;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.h2fase1{
+  top: 42%;
+  left: 575px;
+}
+
+.h2fase2{
+  top: 42%;
+  left: 549px;
+}
+
+.h2fase3{
+  top: 42%;
+  left: 545.66px;
+}
+
+.imagem-container .locked{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+  left: 655px;
+  width: 140px;
+  height: 140px;
+}
