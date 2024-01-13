@@ -13,6 +13,8 @@ body{
     position: fixed;
 }
 
+/*-------------------NAV----------------------*/
+
 nav{
     position: fixed;
     width: 100%;
@@ -58,6 +60,8 @@ nav ul li a{
     margin-left: 5.5px;
     max-width: 1.1rem;
 }
+
+/*-------------------HOME-------------------*/
 
 .home{
     top: 64px;
@@ -116,9 +120,10 @@ h1 {
     transform: scale(1.4);
 }
 
+/*-------------MENU-------------------*/
+
 #menuScreen{
   position: absolute;
-  height: 80vh;
   background-color: #ccc;
   margin-top: 4rem;
   height: 100vh;
@@ -246,4 +251,130 @@ h2{
   left: 655px;
   width: 140px;
   height: 140px;
+}
+
+/*-------------------GAME-------------------*/
+
+
+
+
+
+#game{
+  position: absolute;
+  background-color: #ccc;
+  margin-top: 4rem;
+  height: 100vh;
+  width: 204vh;
+  justify-content: center;
+  align-items: center;
+  top: 0vh;
+  transition: top 0.5s ease;
+}
+
+#game .fundo3{
+  width: 204vh;
+  height: 100vh;
+  position: fixed;
+  filter: saturate(150%) hue-rotate(70deg);
+}
+
+#game .gameScreen{
+  position: absolute;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  width: 150vh;
+  height: 90vh;
+  background-color: gray;
+  border-radius: 8px;
+}
+
+#game .inputScreen{
+  position: absolute;
+  margin-top: 1vh;
+  width: 49.5vh;
+  height: 90vh;
+  margin-left: 152vh;
+  background-color: #282C34;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 1.2rem 0 1.8rem;
+  flex-direction: column;
+}
+
+#game .inputScreen .editor-code-numbers{
+  margin: 0.8rem;
+  padding: 0 0.2rem;
+  text-align: right;
+  color: #646161;
+  font-family: 'Poppins', sans-serif;
+  width: 2px;
+}
+
+#game .inputScreen .editor-code-numbers .code-number{
+  line-height: 1.5;
+  font-size: 1rem;
+  width: 15px;
+  height: 15px;
+  margin-top: 8px;
+  text-align: right;
+}
+
+#game .inputScreen .run-code{
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: 80vh;
+  margin-left: 5rem;
+  width: 6rem;
+  height: 2.4rem;
+  background-color: #66D211;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: 3.4px solid #66D211;
+  transition: background-color 0.4s ease ;
+}
+
+#game .inputScreen .run-code:hover{
+  background-color: transparent;
+}
+
+#game .inputScreen .stop-code{
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: 80vh;
+  margin-left: 5rem;
+  width: 6rem;
+  height: 2.4rem;
+  background-color: #AD093A;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: 3.4px solid #AD093A;
+  transition: background-color 0.4s ease;
+}
+
+#game .inputScreen .stop-code:hover{
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+#game.open{
+  top: -100vh;
+  z-index: 2;
+}
+
+#game.hidden{
+  display: none;
 }
