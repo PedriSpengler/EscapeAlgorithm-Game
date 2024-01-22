@@ -22,7 +22,6 @@ function close_page(id) {
     }
 }
 
-
 /*            TRANSIÇÃO MENU -> GAME           */
 
 function open_game(id){
@@ -38,31 +37,57 @@ function open_game(id){
     }
 }
 
-
-
-
-
-
-
 /*                GAME               */
 
+let nivel_atual = 1;
+let resp_user;
 
-function runAction(id) {
-    var originalButton = document.getElementById(id);
-    var stopButton = document.getElementById('stop');
+function getText(){
+    let respElem = document.getElementById(`resp_nivel${nivel_atual}`);
+    resp_user = respElem.value.toLowerCase().replace(/\s/g, '');
+}
 
-    if (originalButton && stopButton) {
-        originalButton.style.display = 'none';
-        stopButton.style.display = 'flex';
+function atualizaCSS(texto, nivel) {
+    console.log("Entrou na função atualizaCSS. Texto:", texto);
+
+    const campo = document.getElementById(`campo_nivel${nivel}`);
+
+    switch (texto) {
+        case "pirate.moveright();":
+            campo.style.left = parseInt(campo.style.left || 2.1) + 1 + "rem";
+            break;
+        case "pirate.moveleft();":
+            campo.style.left = parseInt(campo.style.left || 2.1) - 1 + "rem";
+            break;
+        case "pirate.moveup();":
+            campo.style.top = parseInt(campo.style.top || 0) - 1 + "rem";
+            break;
+        case "pirate.movedown();":
+            campo.style.top = parseInt(campo.style.top || 0) + 1 + "rem";
+            break;
+        default:
+            break;
     }
 }
 
-function stopAction(id) {
-    var stopButton = document.getElementById(id);
-    var originalButton = document.getElementById('run');
+function clearInput() {
+    let respElem = document.getElementById(`resp_nivel${nivel_atual}`);
+    respElem.value = ''; 
+}
 
-    if (originalButton && stopButton) {
-        stopButton.style.display = 'none';
-        originalButton.style.display = 'flex';
+function runAction(action) {
+    switch (action) {
+        case 'run':
+            getText(); 
+            atualizaCSS(resp_user, nivel_atual);
+            clearInput();
+            break;
+        default:
+            break;
     }
 }
+
+// Adicionando um ouvinte de evento para o botão "Start"
+document.getElementById("run").addEventListener("click", function() {
+    runAction('run');
+});
