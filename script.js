@@ -44,36 +44,74 @@ let resp_user;
 
 function getText(){
     let respElem = document.getElementById(`resp_nivel${nivel_atual}`);
-    resp_user = respElem.value.toLowerCase().replace(/\s/g, '');
+    resp_user = respElem.value.replace(/\s/g, '');
 }
 
 function atualizaCSS(texto, nivel) {
-    console.log("Entrou na função atualizaCSS. Texto:", texto);
-
     const campo = document.getElementById(`campo_nivel${nivel}`);
+    const detector = campo.querySelector(".detector");
+    const walls = document.querySelectorAll(".parede");
+
+    let newX, newY;
 
     switch (texto) {
-        case "pirate.moveright();":
-            campo.style.left = parseInt(campo.style.left || 2.1) + 1 + "rem";
+        case "pirate.moveRight();":
+            newX = parseFloat(campo.style.left || 2.2) + 1.7;
             break;
-        case "pirate.moveleft();":
-            campo.style.left = parseInt(campo.style.left || 2.1) - 1 + "rem";
+        case "pirate.moveLeft();":
+            newX = parseFloat(campo.style.left || 2.2) - 1.7;
             break;
-        case "pirate.moveup();":
-            campo.style.top = parseInt(campo.style.top || 0) - 1 + "rem";
+        case "pirate.moveUp();":
+            newY = parseFloat(campo.style.top || 0.3) - 1.6;
             break;
-        case "pirate.movedown();":
-            campo.style.top = parseInt(campo.style.top || 0) + 1 + "rem";
+        case "pirate.moveDown();":
+            newY = parseFloat(campo.style.top || 0.3) + 1.6;
             break;
         default:
             break;
     }
+
+    // Check for collision with walls
+
+    if (newX !== undefined) {
+        campo.style.left = newX + "rem";
+    }
+    if (newY !== undefined) {
+        campo.style.top = newY + "rem";
+    }
+    let collisionDetected = false;
+    for (const wall of walls) {
+        const rect1 = detector.getBoundingClientRect();
+        const rect2 = wall.getBoundingClientRect();
+
+        if (
+            rect1.x < rect2.x + rect2.width &&
+            rect1.x + rect1.width > rect2.x &&
+            rect1.y < rect2.y + rect2.height &&
+            rect1.y + rect1.height > rect2.y
+        ) {
+            collisionDetected = true;
+            break;
+        }
+    }
+
+    if (collisionDetected) {
+        campo.style.left = "2.1rem"; 
+        campo.style.top = "0"; 
+    }
 }
+
 
 function clearInput() {
     let respElem = document.getElementById(`resp_nivel${nivel_atual}`);
     respElem.value = ''; 
 }
+
+document.getElementById(`resp_nivel${nivel_atual}`).addEventListener("keyup", function(event){
+    if(event.key == "Enter"){
+        runAction('run');
+    }
+})
 
 function runAction(action) {
     switch (action) {
