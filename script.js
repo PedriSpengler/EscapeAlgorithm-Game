@@ -55,23 +55,21 @@ function atualizaCSS(texto, nivel) {
     let newX, newY;
 
     switch (texto) {
-        case "pirate.moveRight();":
+        case "pirata.moverDireita();":
             newX = parseFloat(campo.style.left || 2.2) + 1.7;
             break;
-        case "pirate.moveLeft();":
+        case "pirata.moverEsquerda();":
             newX = parseFloat(campo.style.left || 2.2) - 1.7;
             break;
-        case "pirate.moveUp();":
+        case "pirata.moverCima();":
             newY = parseFloat(campo.style.top || 0.3) - 1.6;
             break;
-        case "pirate.moveDown();":
+        case "pirata.moverBaixo();":
             newY = parseFloat(campo.style.top || 0.3) + 1.6;
             break;
         default:
             break;
     }
-
-    // Check for collision with walls
 
     if (newX !== undefined) {
         campo.style.left = newX + "rem";
@@ -129,3 +127,53 @@ function runAction(action) {
 document.getElementById("run").addEventListener("click", function() {
     runAction('run');
 });
+
+/* Relógio */
+
+const milisecondsEl = document.getElementById('miliseconds');
+const secondsEl = document.getElementById('seconds');
+const minutesEl = document.getElementById('minutes');
+const startBtn = document.getElementById('startAndStop')
+const restBtn = document.getElementById('restore');
+
+let interval;
+let minutes = 0;
+let seconds = 0;
+let miliseconds = 0;
+let isPaused = false;
+
+startBtn.addEventListener("click", startTimer);
+
+function startTimer(){
+    interval = setInterval(() =>{
+        if(!isPaused){
+            miliseconds += 10;
+
+            if(miliseconds === 1000){
+                seconds++;
+                miliseconds = 0;
+            }
+
+            if(seconds === 60){
+                minutes++;
+                seconds = 0;
+            }
+
+            minutesEl.textContent = formatTime(minutes);
+            secondsEl.textContent = formatTime(seconds);
+            milisecondsEl.textContent = miliseconds
+        }
+    }, 10);
+}
+
+function formatTime(time){
+    return time < 10 ? `0${time}` : time;
+}
+
+function formatMiliseconds(){
+    return time < 100 ? time.padStart(3, "0") : time;
+}
+
+
+
+

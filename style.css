@@ -397,27 +397,27 @@ h2{
 #game .gameScreen #wall1{
   position: absolute;
   width: 3rem;
-  margin-left: 40px;
+  left: 40px;
   height: 23.5rem;
-  margin-top: 5.7rem;
+  top: 5.7rem;
   background-color: #282C34;
 }
 
 #game .gameScreen #wall2{
   position: absolute;
   width: 10.4rem;
-  margin-left: 92px;
+  left: 92px;
   height: 2.5rem;
-  margin-top: 27rem;
+  top: 27rem;
   background-color: #4F1699;
 }
 
 #game .gameScreen #wall3{
   position: absolute;
   width: 14rem;
-  margin-left: 60px;
+  left: 60px;
   height: 2rem;
-  margin-top: 0.2rem;
+  top: 0.2rem;
   background-color: #342464;
 }
 
@@ -768,7 +768,7 @@ h2{
   left: 345px;
   height: 1.2rem;
   top: 17rem;
-  background-color: #365fb1;
+  background-color: #1aa538;
 }
 
 #game .gameScreen #wall43{
@@ -792,164 +792,642 @@ h2{
 #game .gameScreen #wall45{
   position: absolute;
   width: 3rem;
-  left: 380px;
+  left: 455px;
   height: 1rem;
-  top: 28.5rem;
+  top: 21.5rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall46{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 15.2rem;
+  left: 539px;
   height: 1rem;
-  top: 28.5rem;
+  top: 21.5rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall47{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 4.9rem;
+  left: 485px;
   height: 1rem;
-  top: 28.5rem;
+  top: 18.5rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall48{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  width: 1rem;
+  left: 485px;
+  height: 2.9rem;
+  top: 18.6rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall49{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
-  background-color: #365fb1;
+  width: 1rem;
+  left: 543px;
+  height: 2.9rem;
+  top: 18.9rem;
+  background-color: #36b173;
 }
 
 #game .gameScreen #wall50{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 4.5rem;
+  left: 543px;
   height: 1rem;
-  top: 28.5rem;
+  top: 13rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall51{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  width: 1rem;
+  left: 543px;
+  height: 2.6rem;
+  top: 14rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall52{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 3.3rem;
+  left: 563px;
   height: 1rem;
-  top: 28.5rem;
-  background-color: #365fb1;
+  top: 15.7rem;
+  background-color: #a5196b;
 }
 
 #game .gameScreen #wall53{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 8.2rem;
+  left: 599px;
   height: 1rem;
-  top: 28.5rem;
-  background-color: #365fb1;
+  top: 18.5rem;
+  background-color: rgb(214, 18, 165);
 }
 
 #game .gameScreen #wall54{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  width: 11.7rem;
+  left: 537px;
+  height: 2.4rem;
+  top: 34.2rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall55{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  width: 1rem;
+  left: 598px;
+  height: 2.0rem;
+  top: 16.8rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall56{
   position: absolute;
   width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  left: 623px;
+  height: 2.5rem;
+  top: 24.2rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall57{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  width: 1.4rem;
+  left: 706px;
+  height: 5.6rem;
+  top: 12.9rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall58{
   position: absolute;
   width: 3rem;
-  left: 380px;
+  left: 571px;
   height: 1rem;
-  top: 28.5rem;
+  top: 31.5rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall59{
   position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
+  width: 1.2rem;
+  left: 600px;
+  height: 3rem;
+  top: 31.5rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall60{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 7.1rem;
+  left: 660px;
   height: 1rem;
-  top: 28.5rem;
+  top: 12.8rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall61{
   position: absolute;
-  width: 3rem;
-  left: 380px;
+  width: 8rem;
+  left: 655px;
   height: 1rem;
-  top: 28.5rem;
+  top: 31.5rem;
   background-color: #365fb1;
 }
 
 #game .gameScreen #wall62{
   position: absolute;
+  width: 1.1rem;
+  left: 655px;
+  height: 3rem;
+  top: 31.5rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall63{
+  position: absolute;
+  width: 1.2rem;
+  left: 598px;
+  height: 5.7rem;
+  top: 2.5rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall64{
+  position: absolute;
+  width: 1.2rem;
+  left: 705px;
+  height: 8rem;
+  top: 21.5rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall65{
+  position: absolute;
+  width: 1.1rem;
+  left: 765px;
+  height: 6.5rem;
+  top: 18.7rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall66{
+  position: absolute;
+  width: 8.3rem;
+  left: 620px;
+  height: 1.0rem;
+  top: 7.2rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall67{
+  position: absolute;
+  width: 4.5rem;
+  left: 765px;
+  height: 1.1rem;
+  top: 27.2rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall68{
+  position: absolute;
   width: 3rem;
-  left: 380px;
+  left: 820px;
+  height: 1rem;
+  top: 30rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall69{
+  position: absolute;
+  width: 1.2rem;
+  left: 652px;
+  height: 2.9rem;
+  top: 4.5rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall70{
+  position: absolute;
+  width: 1.1rem;
+  left: 765px;
+  height: 2rem;
+  top: 30rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall71{
+  position: absolute;
+  width: 3rem;
+  left: 735px;
+  height: 1rem;
+  top: 5.8rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall72{
+  position: absolute;
+  width: 1.2rem;
+  left: 818px;
+  height: 2.6rem;
+  top: 24.3rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall73{
+  position: absolute;
+  width: 1.2rem;
+  left: 764px;
+  height: 1.9rem;
+  top: 4.3rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall74{
+  position: absolute;
+  width: 6.3rem;
+  left: 740px;
+  height: 1.2rem;
+  top: 9.9rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall75{
+  position: absolute;
+  width: 1.2rem;
+  left: 822px;
+  height: 7.9rem;
+  top: 2.39rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall76{
+  position: absolute;
+  width: 4.5rem;
+  left: 763px;
+  height: 1.0rem;
+  top: 15.8rem;
+  background-color: #93db64;
+}
+#game .gameScreen #wall77{
+  position: absolute;
+  width: 4.5rem;
+  left: 766px;
+  height: 1.0rem;
+  top: 18.6rem;
+  background-color: #7ce6cb;
+}
+#game .gameScreen #wall78{
+  position: absolute;
+  width: 1rem;
+  left: 875px;
+  height: 6.7rem;
+  top: 4.3rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall79{
+  position: absolute;
+  width: 7rem;
+  left: 890px;
+  height: 1rem;
+  top:10.1rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall80{
+  position: absolute;
+  width: 1rem;
+  left: 986px;
+  height: 6.3rem;
+  top: 10.5rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall81{
+  position: absolute;
+  width: 2.8rem;
+  left: 995px;
+  height: 1.2rem;
+  top: 15.6rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall82{
+  position: absolute;
+  width: 1rem;
+  left: 876px;
+  height: 6.7rem;
+  top: 12.9rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall83{
+  position: absolute;
+  width: 4rem;
+  left: 820px;
+  height: 1rem;
+  top: 12.9rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall84{
+  position: absolute;
+  width: 4.3rem;
+  left: 877px;
+  height: 1.2rem;
+  top: 18.5rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall85{
+  position: absolute;
+  width: 1.3rem;
+  left: 986px;
+  height: 4rem;
+  top: 18.5rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall86{
+  position: absolute;
+  width: 1.3rem;
+  left: 954px;
+  height: 3.9rem;
+  top: 4.3rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall87{
+  position: absolute;
+  width: 2rem;
+  left: 930px;
+  height: 1.2rem;
+  top: 4.3rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall88{
+  position: absolute;
+  width: 2rem;
+  left: 970px;
+  height: 1.0rem;
+  top: 7.1rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall89{
+  position: absolute;
+  width: 1.2rem;
+  left: 931px;
+  height: 2rem;
+  top: 14.7rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall90{
+  position: absolute;
+  width: 3rem;
+  left: 1039px;
+  height: 12rem;
+  top: 27.2rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall91{
+  position: absolute;
+  width: 1.2rem;
+  left: 875px;
+  height: 4rem;
+  top: 32.9rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall92{
+  position: absolute;
+  width: 1.3rem;
+  left: 928px;
+  height: 3.8rem;
+  top: 21.5rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall93{
+  position: absolute;
+  width: 1.2rem;
+  left: 930px;
+  height: 5.2rem;
+  top: 30.1rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall94{
+  position: absolute;
+  width: 1rem;
+  left: 985px;
+  height: 3.7rem;
+  top: 31.5rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall95{
+  position: absolute;
+  width: 10rem;
+  left: 840px;
+  height: 1.1rem;
+  top: 24.2rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall96{
+  position: absolute;
+  width: 1rem;
+  left: 960px;
+  height: 2.5rem;
+  top: 27.0rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall97{
+  position: absolute;
+  width: 4.8rem;
+  left: 820px;
+  height: 1rem;
+  top: 21.5rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall98{
+  position: absolute;
+  width: 3.4rem;
+  left: 980px;
   height: 1rem;
   top: 28.5rem;
   background-color: #365fb1;
 }
+#game .gameScreen #wall99{
+  position: absolute;
+  width: 3.5rem;
+  left: 900px;
+  height: 1rem;
+  top: 27rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall100{
+  position: absolute;
+  width: 1rem;
+  left: 903px;
+  height: 2.8rem;
+  top: 28.2rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall101{
+  position: absolute;
+  width: 2.4rem;
+  left: 903px;
+  height: 1rem;
+  top: 30.1rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall102{
+  position: absolute;
+  width: 1rem;
+  left: 625px;
+  height: 2rem;
+  top: 19.4rem;
+  background-color: #365fb1;
+}
+#game .gameScreen #wall103{
+  position: absolute;
+  width: 1rem;
+  left: 795px;
+  height: 2.3rem;
+  top: 34.2rem;
+  background-color: #29ce81;
+}
+
+#game .gameScreen #wall104{
+  position: absolute;
+  width: 1rem;
+  left: 765px;
+  height: 2.3rem;
+  top: 35.7rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall105{
+  position: absolute;
+  width: 1rem;
+  left: 822px;
+  height: 2.3rem;
+  top: 32.8rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall106{
+  position: absolute;
+  width: 12rem;
+  left: 845px;
+  height: 2.4rem;
+  top: 37.2rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall107{
+  position: absolute;
+  width: 1rem;
+  left: 488px;
+  height: 2.3rem;
+  top: 38.8rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall108{
+  position: absolute;
+  width: 4rem;
+  left: 495px;
+  height: 1rem;
+  top: 39.9rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall109{
+  position: absolute;
+  width: 1rem;
+  left: 238px;
+  height: 5.3rem;
+  top: 35.5rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall110{
+  position: absolute;
+  width: 4rem;
+  left: 181px;
+  height: 1.2rem;
+  top: 35.5rem;
+  background-color: #365fb1;
+}
+
+#game .gameScreen #wall111{
+  position: absolute;
+  width: 2.8rem;
+  left: 238px;
+  height: 1.2rem;
+  top: 39.9rem;
+  background-color: #be2a99;
+}
+
+#game .gameScreen #wall112{
+  position: absolute;
+  width: 1.28rem;
+  left: 182px;
+  height: 3.9rem;
+  top: 32.8rem;
+  background-color: #75e4bf;
+}
+
+#game .gameScreen #wall113{
+  position: absolute;
+  width: 2.4rem;
+  left: 160px;
+  height: 0.8rem;
+  top: 33rem;
+  background-color: #75e4bf;
+}
+
+#game .gameScreen #wall114{
+  position: absolute;
+  width: 3rem;
+  left: 985px;
+  height: 1rem;
+  top: 31.4rem;
+  background-color: #deebe6;
+}
+
+#game .gameScreen #wall115{
+  position: absolute;
+  width: 1.2rem;
+  left: 930px;
+  height: 1.5rem;
+  top: 10.8rem;
+  background-color: #75e4bf;
+}
+
+#game .gameScreen #wall116{
+  position: absolute;
+  width: 1.2rem;
+  left: 780px;
+  height: 1rem;
+  top: 35.7rem;
+  background-color: #75e4bf;
+}
+
+#game .gameScreen #wall117{
+  position: absolute;
+  width: 1.2rem;
+  left: 810px;
+  height: 1rem;
+  top: 34.2rem;
+  background-color: #75e4bf;
+}
+
+#game .gameScreen #wall118{
+  position: absolute;
+  width: 1.2rem;
+  left: 682px;
+  height: 1.1rem;
+  top: 10rem;
+  background-color: #75e4bf;
+}
+
 /* -------------- PIRATA --------------- */
 
 #game .gameScreen .pirate{
@@ -986,3 +1464,91 @@ h2{
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+/* --------- CRONOMETRO ------------ */
+
+
+.cronometro{
+  z-index: 230;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  padding-top: 8rem;
+  gap: 2rem;
+  background: linear-gradient(135deg, #462fab, #782a97);
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+h1{
+  color: #fff;
+}
+
+.cronometro .contador{
+  display: flex;
+  font-size: 65px;
+  font-weight: bold;
+  align-items: center;
+  color: #fff;
+}
+
+.time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  min-width: 90px;
+}
+
+.separator{
+  font-size: 60px;
+  color:  rgb(235, 227, 227);
+  padding: 0 10px;
+}
+
+#miliseconds{
+  font-size: 35px;
+}
+
+.botoes{
+  display: flex;   
+}
+
+.bottons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.15rem solid #fff;
+  border-radius: 8px;
+  margin: 0 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+}
+
+#startAndStop{
+  width: 80px;
+  height: 30px;
+}
+
+#startAndStop:hover{
+  background-color: #fff;
+  transition: 0.5s;
+  color: #462fab;
+}
+
+#restore{
+  width: 80px;
+  height: 30px;
+}
+
+#restore:hover{
+  background-color: #fff;
+  transition: 0.5s;
+  color: #462fab;
+} 
