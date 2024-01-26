@@ -171,8 +171,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 46%;
+  position: fixed;
+  top: 55%;
   left: 49.58%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -251,6 +251,38 @@ h2{
   left: 655px;
   width: 140px;
   height: 140px;
+}
+
+
+
+@media only screen and (max-width: 1300px){
+
+  .fases #closebutton{
+    position: relative;
+    top: 30px;
+    right: -39vw;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .fases .imagem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagem-container .locked{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-45%, 0%);
+    top: 20%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+  }
+
 }
 
 /*-------------------GAME-------------------*/
