@@ -79,6 +79,7 @@ function atualizaCSS(texto, nivel) {
     const walls = document.querySelectorAll(".parede");
 
     let newX, newY;
+   
 
     switch (texto) {
         case "pirata.moverDireita();":
@@ -154,7 +155,38 @@ document.getElementById("run").addEventListener("click", function() {
     runAction('run');
 });
 
-/* Relógio */
+
+
+function verificaChave(id) {
+    var chave = document.getElementById('chaveImg');
+    var invisivel = false; // Variável para controlar a visibilidade da chave
+
+    function verificaChave() {
+        // Se a chave já estiver invisível, não fazer nada
+        if (invisivel) {
+            return;
+        }
+
+        var detector = document.querySelector('.detector');
+        var detectorRect = detector.getBoundingClientRect();
+        var chaveRect = chave.getBoundingClientRect();
+
+        if (
+            detectorRect.top < chaveRect.bottom &&
+            detectorRect.bottom > chaveRect.top &&
+            detectorRect.left < chaveRect.right &&
+            detectorRect.right > chaveRect.left
+        ) {
+            chave.style.opacity = 0; // Chave fica invisível ao detectar colisão
+            invisivel = true; // Marca a chave como invisível
+        }
+    }
+
+    document.addEventListener("mousemove", verificaChave);
+}
+
+
+/*              Relógio                */
 
 const milisecondsEl = document.getElementById('miliseconds');
 const secondsEl = document.getElementById('seconds');

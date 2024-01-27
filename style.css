@@ -1516,20 +1516,21 @@ h2{
 
 #game .gameScreen .chave{
   position: relative;
-  bottom: 81.8rem; 
+  bottom: 68.8rem; 
   background: transparent;
-  left: -20rem;
+  left: -10rem;
   margin-top: 9rem;
   transform: scale(0.06);
   overflow: none;
+  transition: opacity 0.3s ease;
 }
 
 #game .gameScreen .chave img{
   background-color: transparent;
   transform: scale(0.5);
+  opacity: 1;
+  cursor: pointer;
 }
-
-
 
 
 /* --------- CRONOMETRO ------------ */
