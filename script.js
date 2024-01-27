@@ -3,13 +3,25 @@
 function toggleSound() {
     var audio = document.querySelector('audio');
     audio.muted = !audio.muted;
-    document.getElementById =
+    toggleImage();
 }
 
 const unmutedSound = document.getElementById('unmuted').addEventListener('click', function() {
     document.querySelector('audio').muted = false;
 });
 
+function toggleImage() {
+    var mutedImage = document.getElementById('muted');
+    var unmutedImage = document.getElementById('unmuted');
+
+    if (mutedImage.style.display !== 'none') {
+        mutedImage.style.display = 'none';
+        unmutedImage.style.display = 'inline';
+    } else {
+        mutedImage.style.display = 'inline';
+        unmutedImage.style.display = 'none';
+    }
+}
 
 
 /*               MENU               */
