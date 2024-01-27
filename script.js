@@ -133,8 +133,7 @@ document.getElementById("run").addEventListener("click", function() {
 const milisecondsEl = document.getElementById('miliseconds');
 const secondsEl = document.getElementById('seconds');
 const minutesEl = document.getElementById('minutes');
-const startBtn = document.getElementById('startAndStop')
-const restBtn = document.getElementById('restore');
+const respNivel1 = document.getElementById('resp_nivel1');
 
 let interval;
 let minutes = 0;
@@ -142,40 +141,47 @@ let seconds = 0;
 let miliseconds = 0;
 let isPaused = false;
 
-startBtn.addEventListener("click", startTimer);
+respNivel1.addEventListener("keydown", function(event){
+    if(event.key == 'p'){
+        startTimer();
+    }
+})
 
-function startTimer(){
-    interval = setInterval(() =>{
-        if(!isPaused){
-            miliseconds += 10;
+function startTimer() {
+    // Verifica se o intervalo já está em execução
+    if (!interval) {
+        interval = setInterval(() => {
+            if (!isPaused) {
+                miliseconds += 10;
 
-            if(miliseconds === 1000){
-                seconds++;
-                miliseconds = 0;
+                if (miliseconds === 1000) {
+                    seconds++;
+                    miliseconds = 0;
+                }
+
+                if (seconds === 60) {
+                    minutes++;
+                    seconds = 0;
+                }
+
+                minutesEl.textContent = formatTime(minutes);
+                secondsEl.textContent = formatTime(seconds);
+                milisecondsEl.textContent = formatMiliseconds(miliseconds);
             }
-
-            if(seconds === 60){
-                minutes++;
-                seconds = 0;
-            }
-
-            minutesEl.textContent = formatTime(minutes);
-            secondsEl.textContent = formatTime(seconds);
-            milisecondsEl.textContent = miliseconds
-        }
-    }, 10);
+        }, 10);
+    }
 }
 
 function formatTime(time){
     return time < 10 ? `0${time}` : time;
 }
 
-function formatMiliseconds(){
-    return time < 100 ? time.padStart(3, "0") : time;
+function formatMiliseconds(time) {
+    const formattedMiliseconds = time < 100 ? time.toString().padStart(3, "0") : time;
+    return formattedMiliseconds;
 }
 
 
-/* Ativar Contagem do Cronômetro */
 
 
 
