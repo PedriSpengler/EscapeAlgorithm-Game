@@ -255,7 +255,7 @@ h2{
 
 
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1390px){
 
   .fases #closebutton{
     position: relative;
@@ -286,9 +286,6 @@ h2{
 }
 
 /*-------------------GAME-------------------*/
-
-
-
 
 
 #game{
@@ -1497,6 +1494,32 @@ h2{
   align-items: center;
 }
 
+#game .gameScreen .bau{
+  position: relative;
+  width: calc(150rem / 6);
+  height: 40rem;
+  left: 40.6rem;
+  bottom: 54rem;
+  transform: scale(0.06);
+  overflow: none;
+  background: url(assets/bau.png);
+  transform: scale(0.1);
+}
+
+#game .gameScreen .chave{
+  position: relative;
+  bottom: 81.8rem; 
+  background: transparent;
+  left: -20rem;
+  margin-top: 9rem;
+  transform: scale(0.06);
+  overflow: none;
+}
+
+#game .gameScreen .chave img{
+  background-color: transparent;
+  transform: scale(0.5);
+}
 
 
 

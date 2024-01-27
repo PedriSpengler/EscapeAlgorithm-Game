@@ -10,8 +10,8 @@
     <nav>
         <a href="#"><img src="assets/logo.png" alt="" class="logo"></a>
         <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="#">Entrar</a></li>
+            <li><a href="#">Registrar</a></li>
             <a href="#"><img src="assets/euaimg.jpg" alt="" class="idiomaEUA"></a>
             <a href="#"><img src="assets/polygono.png" alt="" class="polygono" ></a>
         </ul>
@@ -23,10 +23,10 @@
         <h1>Escape Algorithm</h1>
 
         <div class="buttons">
-            <a href="#" id="play-now" onclick="open_page('menuScreen')">Play Now</a>
-            <a href="#">About Us</a>
-            <a href="#">How to Play</a>
-            <a href="#">Options</a>
+            <a href="#" id="play-now" onclick="open_page('menuScreen')">Jogue Agora</a>
+            <a href="#">Sobre</a>
+            <a href="#">Como Jogar</a>
+            <a href="#">Opções</a>
         </div>
 
     </section>
@@ -45,16 +45,16 @@
             </li>
             <li class="imagem-container" id="AustonIsland" onclick="open_game('game')">
                 <a href="#"><img src="assets/fase1.jpg" alt="" id="fase-1"></a>
-                <h2 class="h2fase1">Auston Island</h2>
+                <h2 class="h2fase1">Ilha Auston</h2>
             </li>
             <li class="imagem-container" id="KempeusIsland">
                 <a href="#"><img src="assets/fase2.jpg" alt="" id="fase-2"></a>
-                <h2 class="h2fase2">Kempeus Island</h2>
+                <h2 class="h2fase2">Ilha Kempeus</h2>
                 <a href="#"><img src="assets/cadeado.png" alt="" class="locked"></a>
             </li>
             <li class="imagem-container" id="StempeszIsland">
                 <a href="#"><img src="assets/fase3.jpg" alt="" id="fase-3"></a>
-                <h2 class="h2fase3">Stempesz Island</h2>
+                <h2 class="h2fase3">Ilha Stempesz</h2>
                 <a href="#"><img src="assets/cadeado.png" alt="" class="locked"></a>
 
             </li>
@@ -186,11 +186,21 @@
                 <div class="parede" id="wall116"></div>
                 <div class="parede" id="wall117"></div>
                 <div class="parede" id="wall118"></div>
+
+                <!-- INTERATIVOS -->
                 
                 <div class="pirate" id="campo_nivel1">
                     <img src="assets/run1.png" alt="">
                     <div class="detector"></div>
                 </div>
+
+                <div class="bau"></div>
+
+                <div class="chave">
+                    <img src="assets/key3.png" alt="">
+                </div>
+
+
 
                 <div class="cronometro">
                     <h1>Cronômetro</h1>
@@ -242,7 +252,7 @@
                     <input id="resp_nivel1" placeholder="Digite sua resposta aqui..." type="text" class="code_input tab">
                 </div>
               
-                <a href="#" id="run" class="run-code" onclick="runAction('run')">Start</a>
+                <a href="#" id="run" class="run-code" onclick="runAction('run')">Começar</a>
             </div>
         </div>
     </section>
