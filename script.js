@@ -175,5 +175,9 @@ function formatMiliseconds(){
 }
 
 
+/* Ativar Contagem do Cronômetro */
+
+
+
 
 

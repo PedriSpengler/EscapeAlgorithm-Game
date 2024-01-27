@@ -1527,25 +1527,22 @@ h2{
 /* --------- CRONOMETRO ------------ */
 
 
-.cronometro{
-  z-index: 230;
+.cronometro {
+  z-index: 1;
   font-family: 'Poppins', sans-serif;
   flex-direction: column;
-  padding-top: 8rem;
   gap: 2rem;
-  background: linear-gradient(135deg, #462fab, #782a97);
   align-items: center;
   display: flex;
-  height: 100vh;
-}
-
-h1{
-  color: #fff;
+  position: absolute;
+  top: 4%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 .cronometro .contador{
   display: flex;
-  font-size: 65px;
+  font-size: 40px;
   font-weight: bold;
   align-items: center;
   color: #fff;
@@ -1560,50 +1557,10 @@ h1{
 }
 
 .separator{
-  font-size: 60px;
+  font-size: 30px;
   color:  rgb(235, 227, 227);
-  padding: 0 10px;
 }
 
 #miliseconds{
   font-size: 35px;
 }
-
-.botoes{
-  display: flex;   
-}
-
-.bottons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.15rem solid #fff;
-  border-radius: 8px;
-  margin: 0 12px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 13px;
-  color: #fff;
-}
-
-#startAndStop{
-  width: 80px;
-  height: 30px;
-}
-
-#startAndStop:hover{
-  background-color: #fff;
-  transition: 0.5s;
-  color: #462fab;
-}
-
-#restore{
-  width: 80px;
-  height: 30px;
-}
-
-#restore:hover{
-  background-color: #fff;
-  transition: 0.5s;
-  color: #462fab;
-} 
