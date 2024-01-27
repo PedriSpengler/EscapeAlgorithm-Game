@@ -185,6 +185,24 @@ function verificaChave(id) {
     document.addEventListener("mousemove", verificaChave);
 }
 
+    function verificaBau() {
+        var bau = document.getElementById('bauSelect');
+
+        var detector = document.querySelector('.detector');
+        var detectorRect = detector.getBoundingClientRect();
+        var bauRect = bau.getBoundingClientRect();
+
+        if (
+            detectorRect.top < bauRect.bottom &&
+            detectorRect.bottom > bauRect.top &&
+            detectorRect.left < bauRect.right &&
+            detectorRect.right > bauRect.left
+        ) {
+            bau.style.width = "calc(60 / 3)";
+            bau.style.backgroundPosition = "455% 50%" 
+        }
+    }
+    document.addEventListener("click", verificaBau);
 
 /*              Relógio                */
 
