@@ -79,6 +79,28 @@ nav ul li a{
     left: 0;
 }
 
+.home .som{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 40rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+.home .som img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.home .som #muted{
+
+}
+
+.home .som #unmuted{
+  display: none;
+}
+
 h1 {
     font-family: 'Kameron', serif;
     display: flex;

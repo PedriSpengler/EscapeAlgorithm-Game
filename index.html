@@ -17,6 +17,9 @@
         </ul>
     </nav>
 
+    <audio autoplay loop muted>
+          <source src="sounds/audio3.mp3" type="audio/mpeg">  
+    </audio>
     <!--Section Home-->
     <section class="home">
         <img src="assets/home.jpg" alt="">
@@ -27,6 +30,11 @@
             <a href="#">Sobre</a>
             <a href="#">Como Jogar</a>
             <a href="#">Opções</a>
+        </div>
+
+        <div class="som" onclick="toggleSound()">
+            <img id="muted" src="assets/som-ligado.png" alt="">
+            <img id="unmuted" src="assets/sem-som.png" alt="">
         </div>
 
     </section>

@@ -1,3 +1,17 @@
+/*              ÁUDIO               */
+
+function toggleSound() {
+    var audio = document.querySelector('audio');
+    audio.muted = !audio.muted;
+    document.getElementById =
+}
+
+const unmutedSound = document.getElementById('unmuted').addEventListener('click', function() {
+    document.querySelector('audio').muted = false;
+});
+
+
+
 /*               MENU               */
 
 function open_page(id) {
