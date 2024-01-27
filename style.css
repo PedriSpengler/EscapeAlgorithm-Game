@@ -94,7 +94,7 @@ nav ul li a{
 }
 
 .home .som #muted{
-
+  
 }
 
 .home .som #unmuted{
@@ -686,15 +686,6 @@ h2{
   height: 1.2rem;
   top: 14.3rem;
   background-color: #365fb1;
-}
-
-#game .gameScreen #wall28{
-  position: absolute;
-  width: 1rem;
-  left: 270px;
-  height: 1rem;
-  top: 28.5rem;
-  background-color: #2e5358;
 }
 
 #game .gameScreen #wall29{
