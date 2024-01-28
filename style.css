@@ -1561,3 +1561,221 @@ h2{
   display: block;
   opacity: 1;
  }
+
+
+ /*///instruções//*/
+
+.instrucoes{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 22rem;
+  transform: translate(40%, 20%);
+  width: 60vw;
+  height: 20vh;
+  backdrop-filter: blur(.5rem);
+  z-index: 3;
+  animation: fade-in .5s;
+}
+
+
+.instrucoes .content{
+  background-color: #FFFCF8;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  width: 100rem;
+  height: 45rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.instrucoes .content a{
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.instrucoes .titulo{
+  display: flex;
+}
+
+.instrucoes .titulo .linha{
+  border-left: solid 0.5rem #000;
+}
+
+#hist1, #expl1{
+  width: 100%;
+  height: 100%;
+}
+
+.instrucoes .historia{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.instrucoes .historia p{
+  color: #646161;
+  font-size: 1.8rem;
+}
+
+.instrucoes .historia b{
+  color: #646161;
+}
+
+#jogo .instrucoes .historia .col-b{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#jogo .instrucoes .historia .col-a{
+  max-height: 30rem;
+  overflow: auto;
+  padding: 1rem;
+  direction: rtl;
+}
+
+#jogo .instrucoes .historia .col-a p{
+  direction: initial;
+}
+
+#jogo .instrucoes .historia .col-a::-webkit-scrollbar {
+  width: 5px;
+}
+
+#jogo .instrucoes .historia .col-a::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#jogo .instrucoes .historia .col-a::-webkit-scrollbar-thumb {
+  background-color: #9A290C;
+  border-radius: .5rem;
+}
+
+.instrucoes img{
+  width: 20rem;
+  filter: drop-shadow(-3px 3px 5px #222);
+}
+
+.instrucoes button{
+  position: absolute;
+  bottom: 3rem;
+  right: 5rem;
+}
+
+.instrucoes .explicacao button{
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
+}
+
+.instrucoes button{
+  margin: 0;
+}
+
+.instrucoes .titulo h2{
+  font-size: 2.4rem;
+  font-family: nunito;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 3rem;
+  margin-bottom: 0;
+  opacity: 0.5;
+}
+
+.instrucoes .titulo h2.active{
+  opacity: 1;
+  border-bottom: solid .5rem #9A290C;
+}
+
+.instrucoes .explicacao{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.instrucoes .explicacao .prop{
+  width: 50%;
+}
+
+.instrucoes .explicacao .prop p{
+  color: #646161;
+  font-size: 1.8rem;
+  margin-right: 3rem;
+}
+
+.instrucoes .explicacao .values{
+  display: flex;
+  flex-direction: column;
+  max-height: 30rem;
+  overflow: auto;
+  margin-left: 2rem;
+  padding: 0 1rem;
+}
+
+.instrucoes .explicacao .values::-webkit-scrollbar {
+  width: 5px;
+}
+
+.instrucoes .explicacao .values::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.instrucoes .explicacao .values::-webkit-scrollbar-thumb {
+  background-color: #9A290C;
+  border-radius: .5rem;
+}
+
+#jogo .instrucoes .explicacao h3{
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.instrucoes .explicacao h4{
+  color: #000;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+}
+
+.instrucoes .explicacao .flex{
+  display: flex;
+  border: solid 0.3rem #9A290C;
+  width: 40rem;
+  padding: 0.5rem;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+#expl2 .instrucoes .explicacao .flex{
+  display: flex;
+  border: solid 0.3rem #9A290C;
+  width: 40rem;
+  height: 10rem;
+  padding: 0.5rem;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+.instrucoes .explicacao .flex div{
+  width: 6rem;
+  height: 6rem;
+  border: .2rem dashed #9A290C;
+  border-radius: .5rem;
+}
+
+.instrucoes .explicacao img.ai_{
+  filter: none;
+  width: 70%;
+}
+
+.instrucoes .explicacao .flex img{
+  width: 100%;
+  height: 100%;
+  filter: none;
+}

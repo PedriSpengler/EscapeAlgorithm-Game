@@ -28,7 +28,7 @@
         <div class="buttons">
             <a href="#" id="play-now" onclick="open_page('menuScreen')">Jogue Agora</a>
             <a href="#">Sobre</a>
-            <a href="#">Como Jogar</a>
+            <a href="#" id="comoJogarLink" onclick="abreInstrucoes('instrucao3')">Como Jogar</a>
             <a href="#">Opções</a>
         </div>
 
@@ -271,6 +271,84 @@
           </div>
         </div>
       </div>
+
+        <div id="instrucao3" class="instrucoes">
+          <div class="content">
+            <a onclick="close_modal('instrucao3')">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.8516 8.59375L16.7378 3.70752C17.3374 3.10791 17.3374 2.13574 16.7378 1.53564L15.6519 0.449707C15.0522 -0.149902 14.0801 -0.149902 13.48 0.449707L8.59375 5.33594L3.70752 0.449707C3.10791 -0.149902 2.13574 -0.149902 1.53564 0.449707L0.449707 1.53564C-0.149902 2.13525 -0.149902 3.10742 0.449707 3.70752L5.33594 8.59375L0.449707 13.48C-0.149902 14.0796 -0.149902 15.0518 0.449707 15.6519L1.53564 16.7378C2.13525 17.3374 3.10791 17.3374 3.70752 16.7378L8.59375 11.8516L13.48 16.7378C14.0796 17.3374 15.0522 17.3374 15.6519 16.7378L16.7378 15.6519C17.3374 15.0522 17.3374 14.0801 16.7378 13.48L11.8516 8.59375Z" fill="black"/>
+              </svg>
+            </a>
+            <div class="titulo">
+              <h2 id="t_hist3"
+              class="active">história</h2>
+              <div class="linha"></div>
+              <h2 id="t_flex3">flex-box</h2>
+            </div>
+            <div id="hist3">
+              <div class="historia">
+                <div class="col-a">
+                  <p> Em um belo dia, Blue, a arara azul, estava vagando pela floresta do Pantanal, quando pousou em uma palmeira para realizar sua rotina de se alimentar dos deliciosos buritis, que são conhecidos pela sua cor vermelha e escama brilhante.</p> 
+                  <p>Porém, Blue não esperava que um incêndio começaria próximo a ela.</p>
+                  <p>Ocupada se alimentando do delicioso fruto da palmeira, a arara azul, de repente se vê cercada por uma onda de fogo. Ao tentar sair de toda aqla fumaça, Blue se atrapalha, queima parte de sua asa e cai na mata.</p>
+                  <p>Jorge, que estava olhando aquela fumaça intensa, observa a arara azul desesperada sobre o solo e a salva.</p>
+                  <p>1 em cada 4 incêndios florestais são causados por bitucas de cigarro ainda acesas. Área queimada no Pantanal já ultrapassa 2 milhões de hectares, segundo Prevfogo.</p> 
+                </div>
+                <div class="col-b">
+                  <img src="img/Arara-Azul.gif" alt="">
+                  <button onclick="mudar_instrucao()" class="square">próximo</button>
+                </div>
+              </div>
+            </div>
+            <div id="expl3" class="invisible">
+              <div class="explicacao">
+                <div class="prop">
+                  <h3>justify-content</h3>
+                  <p>Define o alinhamento ao longo do eixo principal. Ele ajuda a distribuir sobras de espaço livre extra quando todos os itens flexíveis em uma linha são inflexíveis ou são flexíveis, mas atingiram seu tamanho máximo. Também exerce algum controle sobre o alinhamento dos itens quando eles ultrapassam a linha.</p>
+                </div>
+                <div class="values">
+                  <h4>flex-start (padrão):</h4>
+                  <div class="flex jc_flex-start">
+                    <div><img src="img/Mamao.png" alt=""></div>
+                    <div><img src="img/Tucano.png" alt=""></div>
+                    <div><img src="img/bocaiuva.png" alt=""></div>
+                  </div>
+                  <h4>flex-end:</h4>
+                  <div class="flex jc_flex-end">
+                    <div><img src="img/Mamao.png" alt=""></div>
+                    <div><img src="img/Tucano.png" alt=""></div>
+                    <div><img src="img/bocaiuva.png" alt=""></div>
+                  </div>
+                  <h4>center:</h4>
+                  <div class="flex jc_center">
+                    <div><img src="img/Mamao.png" alt=""></div>
+                    <div><img src="img/Tucano.png" alt=""></div>
+                    <div><img src="img/bocaiuva.png" alt=""></div>
+                  </div>
+                  <h4>space-between:</h4>
+                  <div class="flex jc_space-between">
+                    <div><img src="img/Mamao.png" alt=""></div>
+                    <div><img src="img/Tucano.png" alt=""></div>
+                    <div><img src="img/bocaiuva.png" alt=""></div>
+                  </div>
+                  <h4>space-around:</h4>
+                  <div class="flex jc_space-around">
+                    <div><img src="img/Mamao.png" alt=""></div>
+                    <div><img src="img/Tucano.png" alt=""></div>
+                    <div><img src="img/bocaiuva.png" alt=""></div>
+                  </div>
+                  <h4>space-evenly:</h4>
+                  <div class="flex jc_space-evenly">
+                    <div><img src="img/Mamao.png" alt=""></div>
+                    <div><img src="img/Tucano.png" alt=""></div>
+                    <div><img src="img/bocaiuva.png" alt=""></div>
+                  </div>
+                </div>
+                <button onclick="mudar_instrucao()" class="square">anterior</button>
+              </div>
+            </div>
+          </div>
+        </div>
     
     
     <script src="script.js"></script>

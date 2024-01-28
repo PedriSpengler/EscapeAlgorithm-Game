@@ -285,8 +285,8 @@ function formatMiliseconds(time) {
 }
 
 
+function abreInstrucoes(id) {
+    var element = document.getElementById(id);
 
-
-
-
-
+    element.style.display = 'flex';
+}
