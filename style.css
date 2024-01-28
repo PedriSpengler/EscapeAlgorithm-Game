@@ -1603,26 +1603,21 @@ h2{
   display: flex;
 }
 
+.instrucoes .titulo2{
+  display: flex;
+}
+
 .instrucoes .historia{
-  margin-top: 1rem;
+  margin-top: rem;
   width: 100%;
   height: 100%;
   display: flex;
 }
 
+
 .instrucoes .historia p{
   color: #0c0c0c;
   font-size: 1.2rem;
-}
-
-#jogo .instrucoes .historia .col-b{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#jogo .instrucoes .historia .col-a p{
-  direction: initial;
 }
 
 .instrucoes .titulo h2{
@@ -1630,13 +1625,40 @@ h2{
   font-family: nunito;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 0 -6rem;
+  margin: 0 -13.5rem;
   margin-bottom: 0;
   opacity: 0.5;
   top: 4rem;
 }
 
+.instrucoes .titulo2 h2{
+  font-size: 2.4rem;
+  font-family: nunito;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 -8.5rem;
+  margin-bottom: 0;
+  opacity: 0.5;
+  top: 24rem;
+}
+
 .instrucoes .titulo h2.active{
   opacity: 1;
   border-bottom: solid .5rem #4F1699;
+}
+
+.instrucoes .titulo2 h2.active2{
+  opacity: 1;
+  border-bottom: solid .5rem #4F1699;
+}
+
+.instrucoes .historia2{
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.instrucoes .historia2 p{
+  color: #0c0c0c;
+  font-size: 1.2rem;
 }
