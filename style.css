@@ -1603,15 +1603,6 @@ h2{
   display: flex;
 }
 
-.instrucoes .titulo .linha{
-  border-left: solid 0.5rem #080505;
-}
-
-#hist1, #expl1{
-  width: 100%;
-  height: 100%;
-}
-
 .instrucoes .historia{
   margin-top: 1rem;
   width: 100%;
@@ -1630,16 +1621,9 @@ h2{
   justify-content: space-between;
 }
 
-
-
 #jogo .instrucoes .historia .col-a p{
   direction: initial;
 }
-
-
-
-
-
 
 .instrucoes .titulo h2{
   font-size: 2.4rem;
@@ -1654,5 +1638,5 @@ h2{
 
 .instrucoes .titulo h2.active{
   opacity: 1;
-  border-bottom: solid .5rem #010002;
+  border-bottom: solid .5rem #4F1699;
 }
