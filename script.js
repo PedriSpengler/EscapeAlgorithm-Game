@@ -185,6 +185,21 @@ function verificaChave(id) {
     document.addEventListener("mousemove", verificaChave);
 }
 
+/*               PRÓXIMO NÍVEL           */
+
+function open_modal(id){
+    document.getElementById(id).className="visible";
+    isTimerPaused = true; // Pausa o temporizador quando o modal é aberto
+}
+
+function close_modal(id){
+    document.getElementById(id).className="invisible";
+    isTimerPaused = false; // Retoma o temporizador quando o modal é fechado
+}
+
+
+/*              Verifica Baú                */
+
     function verificaBau() {
         var bau = document.getElementById('bauSelect');
 
@@ -200,9 +215,17 @@ function verificaChave(id) {
         ) {
             bau.style.width = "calc(60 / 3)";
             bau.style.backgroundPosition = "455% 50%" 
+            document.getElementById("titulo_sucess").textContent = `Parabéns, você concluiu o nível ${nivel_atual}!`;
+            
+            isTimerPaused = true;
+            
+            open_modal('sucess');
         }
     }
     document.addEventListener("click", verificaBau);
+
+
+
 
 /*              Relógio                */
 
@@ -223,11 +246,14 @@ respNivel1.addEventListener("keydown", function(event){
     }
 })
 
+
+
+let isTimerPaused = false; // Adicione essa variável global
+
 function startTimer() {
-    // Verifica se o intervalo já está em execução
     if (!interval) {
         interval = setInterval(() => {
-            if (!isPaused) {
+            if (!isTimerPaused) {
                 miliseconds += 10;
 
                 if (miliseconds === 1000) {
@@ -247,6 +273,7 @@ function startTimer() {
         }, 10);
     }
 }
+
 
 function formatTime(time){
     return time < 10 ? `0${time}` : time;
