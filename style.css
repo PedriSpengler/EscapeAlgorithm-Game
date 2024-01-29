@@ -1601,6 +1601,7 @@ h2{
   position: absolute;
   top: 3rem;
   right: 3rem;
+  cursor: pointer;
 }
 
 .instrucoes .titulo{
@@ -1657,7 +1658,7 @@ h2{
 }
 
 .instrucoes .historia2{
-  margin-top: -1.5rem;
+  margin-top: -1.8rem;
   width: 100%;
   height: 100%;
 }
