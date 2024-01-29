@@ -82,17 +82,41 @@ function atualizaCSS(texto, nivel) {
    
 
     switch (texto) {
-        case "pirata.moverDireita();":
+        case "pirata.moverDireita(1);":
             newX = parseFloat(campo.style.left || 2.2) + 1.7;
             break;
-        case "pirata.moverEsquerda();":
+        case "pirata.moverEsquerda(1);":
             newX = parseFloat(campo.style.left || 2.2) - 1.7;
             break;
-        case "pirata.moverCima();":
+        case "pirata.moverCima(1);":
             newY = parseFloat(campo.style.top || 0.3) - 1.6;
             break;
-        case "pirata.moverBaixo();":
+        case "pirata.moverBaixo(1);":
             newY = parseFloat(campo.style.top || 0.3) + 1.6;
+            break;
+        case "pirata.moverDireita(2);":
+            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 2;
+            break;
+        case "pirata.moverEsquerda(2);":
+            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 2;
+            break;
+        case "pirata.moverCima(2);":
+            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 2;
+            break;
+        case "pirata.moverBaixo(2);":
+            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 2;
+            break;
+        case "pirata.moverDireita(3);":
+            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 3;
+            break;
+        case "pirata.moverEsquerda(3);":
+            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 3;
+            break;
+        case "pirata.moverCima(3);":
+            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 3;
+            break;
+        case "pirata.moverBaixo(3);":
+            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 3;
             break;
         default:
             break;
