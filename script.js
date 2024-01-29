@@ -204,12 +204,11 @@ document.getElementById("run").addEventListener("click", function() {
 });
 
 
-
-function verificaChave(id) {
+function verificaChave() {
     var chave = document.getElementById('chaveImg');
     var invisivel = false; // Variável para controlar a visibilidade da chave
 
-    function verificaChave() {
+    function verificaColisao() {
         // Se a chave já estiver invisível, não fazer nada
         if (invisivel) {
             return;
@@ -230,8 +229,11 @@ function verificaChave(id) {
         }
     }
 
-    document.addEventListener("mousemove", verificaChave);
+    document.addEventListener("mousemove", verificaColisao);
 }
+
+// Chame a função para iniciar a detecção de colisão ao carregar a página
+document.addEventListener("DOMContentLoaded", verificaChave);
 
 /*               PRÓXIMO NÍVEL           */
 
@@ -247,10 +249,12 @@ function close_modal(id){
 
 
 /*              Verifica Baú                */
+function verificaBau() {
+    var bau = document.getElementById('bauSelect');
+    var chave = document.getElementById('chaveImg');
 
-    function verificaBau() {
-        var bau = document.getElementById('bauSelect');
-
+    // Verificar se a chave está invisível antes de abrir o baú
+    if (chave.style.opacity === "0") {
         var detector = document.querySelector('.detector');
         var detectorRect = detector.getBoundingClientRect();
         var bauRect = bau.getBoundingClientRect();
@@ -262,16 +266,19 @@ function close_modal(id){
             detectorRect.right > bauRect.left
         ) {
             bau.style.width = "calc(60 / 3)";
-            bau.style.backgroundPosition = "455% 50%" 
+            bau.style.backgroundPosition = "455% 50%";
             document.getElementById("titulo_sucess").textContent = `Parabéns, você concluiu o nível ${nivel_atual}!`;
-            
+
             isTimerPaused = true;
-            
+
             open_modal('sucess');
         }
+    } else {
+        console.log("Chave não foi encontrada ou ainda não está invisível.");
     }
-    document.addEventListener("click", verificaBau);
+}
 
+document.addEventListener("click", verificaBau);
 
 
 
