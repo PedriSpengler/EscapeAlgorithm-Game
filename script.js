@@ -118,6 +118,30 @@ function atualizaCSS(texto, nivel) {
         case "pirata.moverBaixo(3);":
             newY = parseFloat(campo.style.top || 0.3) + 1.6 * 3;
             break;
+        case "pirata.moverDireita(4);":
+            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 4;
+            break;
+        case "pirata.moverEsquerda(4);":
+            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 4;
+            break;
+        case "pirata.moverCima(4);":
+            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 4;
+            break;
+        case "pirata.moverBaixo(4);":
+            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 4;
+            break;
+        case "pirata.moverDireita(5);":
+            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 5;
+            break;
+        case "pirata.moverEsquerda(5);":
+            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 5;
+            break;
+        case "pirata.moverCima(5);":
+            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 5;
+            break;
+        case "pirata.moverBaixo(5);":
+            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 5;
+            break;
         default:
             break;
     }
