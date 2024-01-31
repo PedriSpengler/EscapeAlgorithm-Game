@@ -246,18 +246,21 @@ h2{
 }
 
 .h2fase1{
-  top: 42%;
-  left: 575px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h2fase2{
-  top: 42%;
-  left: 549px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h2fase3{
-  top: 42%;
-  left: 545.66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagem-container .locked{
@@ -303,6 +306,10 @@ h2{
 
 /*-------------------GAME-------------------*/
 
+.parede{
+  background-color: #000;
+}
+
 
 #game{
   position: absolute;
@@ -332,6 +339,7 @@ h2{
   background-color: gray;
   border-radius: 8px;
   overflow: hidden;
+  transform: scale(1);
 }
 
 #game .gameScreen img{
