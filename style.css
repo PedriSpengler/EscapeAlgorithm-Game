@@ -190,9 +190,10 @@ h1 {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 55%;
+  top: 13%;
+  bottom: 6.5%;
   left: 49.58%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   list-style: none;
 }
 
@@ -257,30 +258,27 @@ h2{
   transform: translateY(-50%); 
 }
 
-.h2fase1 {
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.h2fase2 {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.h2fase3 {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.imagem-container .locked{
-  display: flex;
+.imagem-container .locked2,
+.imagem-container .locked3
+{
   position: absolute;
+  display: flex;
   justify-content: center;
   align-items: center;
   top: 20%;
+  transform: translateY(-50%); 
   left: 655px;
   width: 140px;
   height: 140px;
+}
+.imagem-container .locked2{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.imagem-container .locked3{
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
