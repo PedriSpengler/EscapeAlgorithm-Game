@@ -281,6 +281,15 @@ h2{
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 920px){
+  .fases #closebutton{
+    position: relative;
+    top: 30px;
+    right: -32vw;
+    z-index: 5;
+    cursor: pointer;
+  }
+}
 
 
 @media only screen and (max-width: 1390px){
@@ -288,7 +297,7 @@ h2{
   .fases #closebutton{
     position: relative;
     top: 30px;
-    right: -39vw;
+    right: -48vw;
     z-index: 5;
     cursor: pointer;
   }
