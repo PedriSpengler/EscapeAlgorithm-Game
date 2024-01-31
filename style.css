@@ -245,19 +245,31 @@ h2{
   cursor: pointer;
 }
 
-.h2fase1{
-  top: 42%;
-  left: 575px;
+.h2fase1,
+.h2fase2,
+.h2fase3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
-.h2fase2{
-  top: 42%;
-  left: 549px;
+.h2fase1 {
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.h2fase3{
-  top: 42%;
-  left: 545.66px;
+.h2fase2 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.h2fase3 {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .imagem-container .locked{
@@ -270,6 +282,7 @@ h2{
   width: 140px;
   height: 140px;
 }
+
 
 
 @media only screen and (max-width: 1390px){
