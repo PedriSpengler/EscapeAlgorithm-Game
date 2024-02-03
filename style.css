@@ -442,7 +442,7 @@ h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   margin-top: 80vh;
-  margin-left: 5rem;
+  margin-left: 8.8rem;
   width: 6rem;
   height: 2.4rem;
   background-color: #66D211;
@@ -457,6 +457,43 @@ h2{
 
 #game .inputScreen .run-code:hover{
   background-color: transparent;
+}
+
+#game .inputScreen .help{
+  margin-top: 2rem;
+  width: 22.5rem;
+  height: 27rem;
+}
+
+#game .inputScreen .help h3{
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+} 
+
+#game .inputScreen .help p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+#game .inputScreen .help .help2{
+  margin-left: 5.5rem;
+  margin-top: -0.2rem;
+  color: #647AEF;
+}
+
+#game .inputScreen .help .help3{
+  margin-left: 3.5rem;
+  margin-top: 0.9rem;
+}
+
+#game .inputScreen .help p{
+  margin-left: 3.5rem;
+  margin-top: 1rem;
 }
 
 #game.open{
