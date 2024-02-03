@@ -216,8 +216,9 @@ function close_modal(id){
 
 /*              Verifica Baú                */
 function verificaBau() {
-    var bau = document.getElementById('bauSelect');
+    var bau = document.getElementById('bauSelect1');
     var chave = document.getElementById('chaveImg');
+    var bauAberto = document.getElementById('bauSelect2');
 
     // Verificar se a chave está invisível antes de abrir o baú
     if (chave.style.opacity === "0") {
@@ -238,6 +239,7 @@ function verificaBau() {
              detector2Rect.left < bauRect.right &&
              detector2Rect.right > bauRect.left)
         ) {
+            bauAberto.style.zIndex = 2;
             document.getElementById("titulo_sucess").textContent = `Parabéns, você concluiu o nível ${nivel_atual}!`;
 
             isTimerPaused = true;
@@ -266,12 +268,15 @@ let seconds = 0;
 let miliseconds = 0;
 let isPaused = false;
 
+document.addEventListener("keydown", function(event){
+    startTimer();
+});
+
 respNivel1.addEventListener("keydown", function(event){
-    if(event.key == 'p'){
+    if (event.key === 'Enter') {
         startTimer();
     }
-})
-
+});
 
 
 let isTimerPaused = false; // Adicione essa variável global
