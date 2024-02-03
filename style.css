@@ -330,7 +330,7 @@ h2{
   background-color: #ccc;
   margin-top: 4rem;
   height: 100vh;
-  width: 204vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   top: 0vh;
@@ -338,17 +338,27 @@ h2{
 }
 
 #game .fundo3{
-  width: 204vh;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   filter: saturate(150%) hue-rotate(70deg);
+}
+
+@media only screen and (max-width: 920px) {
+  #game {
+      width: 100vw; /* Altere para 100% da largura da tela */
+  }
+
+  #game .fundo3 {
+      width: 100vw; /* Altere para 100% da largura da tela */
+  }
 }
 
 #game .gameScreen{
   position: absolute;
   margin-top: 1vh;
   margin-left: 1vh;
-  width: 150vh;
+  width: 74vw;
   height: 90vh;
   background-color: gray;
   border-radius: 8px;
@@ -357,19 +367,21 @@ h2{
 
 #game .gameScreen img{
   position: absolute;
-  width: 150vh;
+  width: 74vw;
   height: 90vh;
   background-color: gray;
   border-radius: 8px;
-  transform: scale(1.075);
+  transform: scale(4);
+  left: 78.2vw;
+  top: -6.4vh;
 }
 
 #game .inputScreen{
   position: absolute;
   margin-top: 1vh;
-  width: 49.5vh;
+  width: 24.7vw;
   height: 90vh;
-  margin-left: 152vh;
+  margin-left: 75vw;
   background-color: #282C34;
   border-radius: 8px;
   display: flex;
@@ -410,11 +422,12 @@ h2{
   font-family: 'Poppins', sans-serif;
   border: none;
   font-size: 1rem;
+  width: 14.5vw;
 }
 
 .tab{
-  margin-left: 0.2rem;
-  margin-top: 0.8rem;
+  margin-left: 0.2vw;
+  margin-top: 1.9vh;
 }
 
 .code_blue{
@@ -456,959 +469,172 @@ h2{
 }
 
 
-
-
 /* ------------ PAREDES -------------- */
+
+.parede{
+  position: absolute;
+  background-color: #000;
+}
 
 #game .gameScreen #wall1{
   position: absolute;
-  width: 3rem;
-  left: 40px;
-  height: 23.5rem;
-  top: 5.7rem;
+  width: 3.2%;
+  left: -1.5%;
+  height: 100%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall2{
   position: absolute;
-  width: 10.4rem;
-  left: 92px;
-  height: 2.5rem;
-  top: 27rem;
+  width: 16.4%;
+  left: 11.3%;
+  height: 11.5%;
+  top: 68.6%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall3{
   position: absolute;
-  width: 14rem;
-  left: 60px;
-  height: 2rem;
-  top: 0.2rem;
+  width: 100%;
+  height: 5%;
+  top: 0%;
+  left: 1%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall4{
   position: absolute;
-  width: 18.6rem;
-  left: 209px;
-  height: 1.2rem;
-  top: 4.3rem;
+  width: 17.6%;
+  left: 11%;
+  height: 23.5%;
+  top: 18%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall5{
   position: absolute;
-  width: 39rem;
-  left: 460px;
-  height: 2.2rem;
-  top: .2rem;
+  width: 1000%;
+  left: 38.9%;
+  height: 6%;
+  top: 24%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall6{
   position: absolute;
-  width: 3rem;
-  left: 1038px;
-  height: 22.5rem;
-  top: 1.9rem;
+  width: 14%;
+  left: 0%;
+  height: 12.1%;
+  top: 29.5%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall7{
   position: absolute;
-  width: 2.9rem;
-  left: 488px;
-  height: 12.6rem;
-  top: 24.2rem;
+  width: 55.8%;
+  left: 0%;
+  height: 8%;
+  top: 92%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall8{
   position: absolute;
-  width: 1.2rem;
-  left: 319px;
-  height: 4.9rem;
-  top: 24.7rem;
+  width: 35.4%;
+  left: 38.1%;
+  height: 11.3%;
+  top: 42.3%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall9{
   position: absolute;
-  width: 7.8rem;
-  left: 267px;
-  height: 1.2rem;
-  top: 24.0rem;
+  width: 26.1%;
+  left: 20.4%;
+  height: 12%;
+  top: 56%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall10{
   position: absolute;
-  width: 2.6rem;
-  left: 240px;
-  height: 2.5rem;
-  top: 7.2rem;
+  width: 100%;
+  left: 5%;
+  height: 3%;
+  top: 98%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall11{
   position: absolute;
-  width: 1.2rem;
-  left: 23.5rem;
-  height: 2.2rem;
-  top: 21.5rem;
+  width: 8.2%;
+  left: 73.5%;
+  height: 90%;
+  top: 79.1%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall12{
   position: absolute;
-  width: 1.2rem;
-  left: 318px;
-  height: 9.6rem;
-  top: 1.3rem;
+  width: 80%;
+  left: 38.2%;
+  height: 22.6%;
+  top: 3.3%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall13{
   position: absolute;
-  width: 1.2rem;
-  left: 545px;
-  height: 4.9rem;
-  top: 5.7rem;
+  width: 42%;
+  left: 57%;
+  height: 11%;
+  top: 69%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall14{
   position: absolute;
-  width: 6.3rem;
-  left: 545px;
-  height: 1.0rem;
-  top: 9.9rem;
+  width: 55%;
+  left: 93%;
+  height: 60.9%;
+  top: 43%;
+  right: 0%;
+  bottom: 0%;
 }
 
 #game .gameScreen #wall15{
   position: absolute;
-  width: 1rem;
-  left: 380px;
-  height: 1rem;
-  top: 27.3rem;
-}
-
-#game .gameScreen #wall16{
-  position: absolute;
-  width: 1.2rem;
-  left: 432px;
-  height: 8rem;
-  top: 21.5rem;
-}
-
-#game .gameScreen #wall17{
-  position: absolute;
-  width: 6.1rem;
-  left: 570px;
-  height: 1.0rem;
-  top: 28.5rem;
-}
-
-#game .gameScreen #wall18{
-  position: absolute;
-  width: 6.1rem;
-  left: 210px;
-  height: 1rem;
-  top: 21.5rem;
-}
-
-#game .gameScreen #wall19{
-  position: absolute;
-  width: 4.9rem;
-  left: 153px;
-  height: 1rem;
-  top: 23rem;
-}
-
-#game .gameScreen #wall20{
-  position: absolute;
-  width: 1.2rem;
-  left: 570px;
-  height: 3.9rem;
-  top: 24.5rem;
-}
-
-#game .gameScreen #wall21{
-  position: absolute;
-  width: 7.9rem;
-  left: 267px;
-  height: 1.0rem;
-  top: 13.0rem;
-}
-
-#game .gameScreen #wall22{
-  position: absolute;
-  width: 3rem;
-  left: 128px;
-  height: 1rem;
-  top: 24.4rem;
-}
-
-#game .gameScreen #wall23{
-  position: absolute;
-  width: 4.7rem;
-  left: 320px;
-  height: 0.8rem;
-  top: 15.8rem;
-}
-
-#game .gameScreen #wall24{
-  position: absolute;
-  width: 14.9rem;
-  left: 211px;
-  height: 1rem;
-  top: 18.5rem;
-}
-
-#game .gameScreen #wall25{
-  position: absolute;
-  width: 8.6rem;
-  left: 90px;
-  height: 1rem;
-  top: 15.6rem;
-}
-
-#game .gameScreen #wall26{
-  position: absolute;
-  width: 1.2rem;
-  left: 210px;
-  height: 1.4rem;
-  top: 16.8rem;
-}
-
-#game .gameScreen #wall27{
-  position: absolute;
-  width: 1.3rem;
-  left: 153px;
-  height: 1.2rem;
-  top: 14.3rem;
-}
-
-#game .gameScreen #wall29{
-  position: absolute;
-  width: 1.3rem;
-  left: 265px;
-  height: 4rem;
-  top: 14.2rem;
-}
-
-#game .gameScreen #wall30{
-  position: absolute;
-  width: 2.7rem;
-  left: 89px;
-  height: 1rem;
-  top: 19.9rem;
-}
-
-#game .gameScreen #wall31{
-  position: absolute;
-  width: 2.9rem;
-  left: 129px;
-  height: 2.2rem;
-  top: 18.8rem;
-}
-
-#game .gameScreen #wall32{
-  position: absolute;
-  width: 3.2rem;
-  left: 130px;
-  height: 1rem;
-  top: 7.1rem;
-}
-
-#game .gameScreen #wall33{
-  position: absolute;
-  width: 1.2rem;
-  left: 182.5px;
-  height: 5rem;
-  top: 7.1rem;
-
-}
-
-#game .gameScreen #wall34{
-  position: absolute;
-  width: 1.2rem;
-  left: 129px;
-  height: 6.3rem;
-  top: 6.0rem;
-}
-#game .gameScreen #wall35{
-  position: absolute;
-  width: 3rem;
-  left: 182px;
-  height: 1rem;
-  top: 11.4rem;
- 
-}
-
-#game .gameScreen #wall36{
-  position: absolute;
-  width: 3.3rem;
-  left: 450px;
-  height: 1rem;
-  top: 7.3rem;
-  
-}
-
-#game .gameScreen #wall37{
-  position: absolute;
-  width: 4.7rem;
-  left: 376px;
-  height: 1rem;
-  top: 10.1rem;
-  
-}
-
-#game .gameScreen #wall38{
-  position: absolute;
-  width: 1.2rem;
-  left: 430px;
-  height: 5.3rem;
-  top: 4.5rem;
-  
-}
-
-#game .gameScreen #wall39{
-  position: absolute;
-  width: 1.2rem;
-  left: 486px;
-  height: 5.4rem;
-  top: 8.2rem;
-}
-
-#game .gameScreen #wall40{
-  position: absolute;
-  width: 1.2rem;
-  left: 430px;
-  height: 3rem;
-  top: 15.9rem;
-}
-
-#game .gameScreen #wall41{
-  position: absolute;
-  width: 4.8rem;
-  left: 430px;
-  height: 1rem;
-  top: 12.9rem;
-}
-
-#game .gameScreen #wall42{
-  position: absolute;
-  width: 1.2rem;
-  left: 345px;
-  height: 1.2rem;
-  top: 17rem;
-}
-
-#game .gameScreen #wall43{
-  position: absolute;
-  width: 3rem;
-  left: 377px;
-  height: 1rem;
-  top: 1.5rem;
-}
-
-#game .gameScreen #wall44{
-  position: absolute;
-  width: 3rem;
-  left: 380px;
-  height: 1rem;
-  top: 28.5rem;
-}
-
-#game .gameScreen #wall45{
-  position: absolute;
-  width: 3rem;
-  left: 455px;
-  height: 1rem;
-  top: 21.5rem;
-}
-
-#game .gameScreen #wall46{
-  position: absolute;
-  width: 15.2rem;
-  left: 539px;
-  height: 1rem;
-  top: 21.5rem;
-}
-
-#game .gameScreen #wall47{
-  position: absolute;
-  width: 4.9rem;
-  left: 485px;
-  height: 1rem;
-  top: 18.5rem;
-}
-
-#game .gameScreen #wall48{
-  position: absolute;
-  width: 1rem;
-  left: 485px;
-  height: 2.9rem;
-  top: 18.6rem;
-}
-
-#game .gameScreen #wall49{
-  position: absolute;
-  width: 1rem;
-  left: 543px;
-  height: 2.9rem;
-  top: 18.9rem;
-}
-
-#game .gameScreen #wall50{
-  position: absolute;
-  width: 4.5rem;
-  left: 543px;
-  height: 1rem;
-  top: 13rem;
-}
-
-#game .gameScreen #wall51{
-  position: absolute;
-  width: 1rem;
-  left: 543px;
-  height: 2.6rem;
-  top: 14rem;
-}
-
-#game .gameScreen #wall52{
-  position: absolute;
-  width: 3.3rem;
-  left: 563px;
-  height: 1rem;
-  top: 15.7rem;
-}
-
-#game .gameScreen #wall53{
-  position: absolute;
-  width: 8.2rem;
-  left: 599px;
-  height: 1rem;
-  top: 18.5rem;
-}
-
-#game .gameScreen #wall54{
-  position: absolute;
-  width: 11.7rem;
-  left: 537px;
-  height: 2.4rem;
-  top: 34.2rem;
-}
-
-#game .gameScreen #wall55{
-  position: absolute;
-  width: 1rem;
-  left: 598px;
-  height: 2.0rem;
-  top: 16.8rem;
-}
-
-#game .gameScreen #wall56{
-  position: absolute;
-  width: 3rem;
-  left: 623px;
-  height: 2.5rem;
-  top: 24.2rem;
-}
-
-#game .gameScreen #wall57{
-  position: absolute;
-  width: 1.4rem;
-  left: 706px;
-  height: 5.6rem;
-  top: 12.9rem;
-}
-
-#game .gameScreen #wall58{
-  position: absolute;
-  width: 3rem;
-  left: 571px;
-  height: 1rem;
-  top: 31.5rem;
-}
-
-#game .gameScreen #wall59{
-  position: absolute;
-  width: 1.2rem;
-  left: 600px;
-  height: 3rem;
-  top: 31.5rem;
-}
-
-#game .gameScreen #wall60{
-  position: absolute;
-  width: 7.1rem;
-  left: 660px;
-  height: 1rem;
-  top: 12.8rem;
-}
-
-#game .gameScreen #wall61{
-  position: absolute;
-  width: 8rem;
-  left: 655px;
-  height: 1rem;
-  top: 31.5rem;
-}
-
-#game .gameScreen #wall62{
-  position: absolute;
-  width: 1.1rem;
-  left: 655px;
-  height: 3rem;
-  top: 31.5rem;
-}
-
-#game .gameScreen #wall63{
-  position: absolute;
-  width: 1.2rem;
-  left: 598px;
-  height: 5.7rem;
-  top: 2.5rem;
-}
-
-#game .gameScreen #wall64{
-  position: absolute;
-  width: 1.2rem;
-  left: 705px;
-  height: 8rem;
-  top: 21.5rem;
-}
-
-#game .gameScreen #wall65{
-  position: absolute;
-  width: 1.1rem;
-  left: 765px;
-  height: 6.5rem;
-  top: 18.7rem;
-  
-}
-
-#game .gameScreen #wall66{
-  position: absolute;
-  width: 8.3rem;
-  left: 620px;
-  height: 1.0rem;
-  top: 7.2rem;
-}
-
-#game .gameScreen #wall67{
-  position: absolute;
-  width: 4.5rem;
-  left: 765px;
-  height: 1.1rem;
-  top: 27.2rem;
-}
-
-#game .gameScreen #wall68{
-  position: absolute;
-  width: 3rem;
-  left: 820px;
-  height: 1rem;
-  top: 30rem;
-}
-
-#game .gameScreen #wall69{
-  position: absolute;
-  width: 1.2rem;
-  left: 652px;
-  height: 2.9rem;
-  top: 4.5rem;
-}
-
-#game .gameScreen #wall70{
-  position: absolute;
-  width: 1.1rem;
-  left: 765px;
-  height: 2rem;
-  top: 30rem;
-}
-
-#game .gameScreen #wall71{
-  position: absolute;
-  width: 3rem;
-  left: 735px;
-  height: 1rem;
-  top: 5.8rem;
-}
-
-#game .gameScreen #wall72{
-  position: absolute;
-  width: 1.2rem;
-  left: 818px;
-  height: 2.6rem;
-  top: 24.3rem;
-}
-
-#game .gameScreen #wall73{
-  position: absolute;
-  width: 1.2rem;
-  left: 764px;
-  height: 1.9rem;
-  top: 4.3rem;
-}
-
-#game .gameScreen #wall74{
-  position: absolute;
-  width: 6.3rem;
-  left: 740px;
-  height: 1.2rem;
-  top: 9.9rem;
-}
-
-#game .gameScreen #wall75{
-  position: absolute;
-  width: 1.2rem;
-  left: 822px;
-  height: 7.9rem;
-  top: 2.39rem;
-}
-
-#game .gameScreen #wall76{
-  position: absolute;
-  width: 4.5rem;
-  left: 763px;
-  height: 1.0rem;
-  top: 15.8rem;
-}
-#game .gameScreen #wall77{
-  position: absolute;
-  width: 4.5rem;
-  left: 766px;
-  height: 1.0rem;
-  top: 18.6rem;
-}
-#game .gameScreen #wall78{
-  position: absolute;
-  width: 1rem;
-  left: 875px;
-  height: 6.7rem;
-  top: 4.3rem;
-}
-#game .gameScreen #wall79{
-  position: absolute;
-  width: 7rem;
-  left: 890px;
-  height: 1rem;
-  top:10.1rem;
-}
-#game .gameScreen #wall80{
-  position: absolute;
-  width: 1rem;
-  left: 986px;
-  height: 6.3rem;
-  top: 10.5rem;
-  
-}
-#game .gameScreen #wall81{
-  position: absolute;
-  width: 2.8rem;
-  left: 995px;
-  height: 1.2rem;
-  top: 15.6rem;
-  
-}
-#game .gameScreen #wall82{
-  position: absolute;
-  width: 1rem;
-  left: 876px;
-  height: 6.7rem;
-  top: 12.9rem;
-  
-}
-#game .gameScreen #wall83{
-  position: absolute;
-  width: 4rem;
-  left: 820px;
-  height: 1rem;
-  top: 12.9rem;
-  
-}
-#game .gameScreen #wall84{
-  position: absolute;
-  width: 4.3rem;
-  left: 877px;
-  height: 1.2rem;
-  top: 18.5rem;
-  
-}
-#game .gameScreen #wall85{
-  position: absolute;
-  width: 1.3rem;
-  left: 986px;
-  height: 4rem;
-  top: 18.5rem;
-  
-}
-#game .gameScreen #wall86{
-  position: absolute;
-  width: 1.3rem;
-  left: 954px;
-  height: 3.9rem;
-  top: 4.3rem;
- 
-}
-#game .gameScreen #wall87{
-  position: absolute;
-  width: 2rem;
-  left: 930px;
-  height: 1.2rem;
-  top: 4.3rem;
-  
-}
-#game .gameScreen #wall88{
-  position: absolute;
-  width: 2rem;
-  left: 970px;
-  height: 1.0rem;
-  top: 7.1rem;
-  
-}
-#game .gameScreen #wall89{
-  position: absolute;
-  width: 1.2rem;
-  left: 931px;
-  height: 2rem;
-  top: 14.7rem;
-  
-}
-#game .gameScreen #wall90{
-  position: absolute;
-  width: 3rem;
-  left: 1039px;
-  height: 12rem;
-  top: 27.2rem;
-  
-}
-#game .gameScreen #wall91{
-  position: absolute;
-  width: 1.2rem;
-  left: 875px;
-  height: 4rem;
-  top: 32.9rem;
-  
-}
-#game .gameScreen #wall92{
-  position: absolute;
-  width: 1.3rem;
-  left: 928px;
-  height: 3.8rem;
-  top: 21.5rem;
-  
-}
-#game .gameScreen #wall93{
-  position: absolute;
-  width: 1.2rem;
-  left: 930px;
-  height: 5.2rem;
-  top: 30.1rem;
-  
-}
-#game .gameScreen #wall94{
-  position: absolute;
-  width: 1rem;
-  left: 985px;
-  height: 3.7rem;
-  top: 31.5rem;
-  
-}
-#game .gameScreen #wall95{
-  position: absolute;
-  width: 10rem;
-  left: 840px;
-  height: 1.1rem;
-  top: 24.2rem;
-  
-}
-#game .gameScreen #wall96{
-  position: absolute;
-  width: 1rem;
-  left: 960px;
-  height: 2.5rem;
-  top: 27.0rem;
- 
-}
-#game .gameScreen #wall97{
-  position: absolute;
-  width: 4.8rem;
-  left: 820px;
-  height: 1rem;
-  top: 21.5rem;
-  
-}
-#game .gameScreen #wall98{
-  position: absolute;
-  width: 3.4rem;
-  left: 980px;
-  height: 1rem;
-  top: 28.5rem;
-  
-}
-#game .gameScreen #wall99{
-  position: absolute;
-  width: 3.5rem;
-  left: 900px;
-  height: 1rem;
-  top: 27rem;
- 
-}
-#game .gameScreen #wall100{
-  position: absolute;
-  width: 1rem;
-  left: 903px;
-  height: 2.8rem;
-  top: 28.2rem;
-  
-}
-#game .gameScreen #wall101{
-  position: absolute;
-  width: 2.4rem;
-  left: 903px;
-  height: 1rem;
-  top: 30.1rem;
-  
-}
-#game .gameScreen #wall102{
-  position: absolute;
-  width: 1rem;
-  left: 625px;
-  height: 2rem;
-  top: 19.4rem;
-  
-}
-#game .gameScreen #wall103{
-  position: absolute;
-  width: 1rem;
-  left: 795px;
-  height: 2.3rem;
-  top: 34.2rem;
-  
-}
-
-#game .gameScreen #wall104{
-  position: absolute;
-  width: 1rem;
-  left: 765px;
-  height: 2.3rem;
-  top: 35.7rem;
-  
-}
-
-#game .gameScreen #wall105{
-  position: absolute;
-  width: 1rem;
-  left: 822px;
-  height: 2.3rem;
-  top: 32.8rem;
-}
-
-#game .gameScreen #wall106{
-  position: absolute;
-  width: 12rem;
-  left: 845px;
-  height: 2.4rem;
-  top: 37.2rem;
-}
-
-#game .gameScreen #wall107{
-  position: absolute;
-  width: 1rem;
-  left: 488px;
-  height: 2.3rem;
-  top: 38.8rem;
-}
-
-#game .gameScreen #wall108{
-  position: absolute;
-  width: 4rem;
-  left: 495px;
-  height: 1rem;
-  top: 39.9rem;
-}
-
-#game .gameScreen #wall109{
-  position: absolute;
-  width: 1rem;
-  left: 238px;
-  height: 5.3rem;
-  top: 35.5rem;
-}
-
-#game .gameScreen #wall110{
-  position: absolute;
-  width: 4rem;
-  left: 181px;
-  height: 1.2rem;
-  top: 35.5rem;
-}
-
-#game .gameScreen #wall111{
-  position: absolute;
-  width: 2.8rem;
-  left: 238px;
-  height: 1.2rem;
-  top: 39.9rem;
-}
-
-#game .gameScreen #wall112{
-  position: absolute;
-  width: 1.28rem;
-  left: 182px;
-  height: 3.9rem;
-  top: 32.8rem;
-}
-
-#game .gameScreen #wall113{
-  position: absolute;
-  width: 2.4rem;
-  left: 160px;
-  height: 0.8rem;
-  top: 33rem;
-}
-
-#game .gameScreen #wall114{
-  position: absolute;
-  width: 3rem;
-  left: 985px;
-  height: 1rem;
-  top: 31.4rem;
-}
-
-#game .gameScreen #wall115{
-  position: absolute;
-  width: 1.2rem;
-  left: 930px;
-  height: 1.5rem;
-  top: 10.8rem;
-}
-
-#game .gameScreen #wall116{
-  position: absolute;
-  width: 1.2rem;
-  left: 780px;
-  height: 1rem;
-  top: 35.7rem;
-}
-
-#game .gameScreen #wall117{
-  position: absolute;
-  width: 1.2rem;
-  left: 810px;
-  height: 1rem;
-  top: 34.2rem;
-}
-
-#game .gameScreen #wall118{
-  position: absolute;
-  width: 1.2rem;
-  left: 682px;
-  height: 1.1rem;
-  top: 10rem;
+  width: 15%;
+  left: 98.3%;
+  height: 40%;
+  top: 20%;
+  right: 0%;
+  bottom: 0%;
 }
 
 /* -------------- PIRATA --------------- */
 
 #game .gameScreen .pirate{
   position: relative;
-  width: 40rem;
-  height: 40rem;
-  top: 0.3rem; 
-  left: 2.2rem;
-  margin-top: 9rem;
-  transform: scale(0.06);
+  width: 40vw;
+  height: 40vh;
+  top: 39vh; 
+  left: 1vw;
+  bottom: 0;
+  transform: scale(0.05);
   overflow: none;
   z-index: 2;
 }
@@ -1421,17 +647,29 @@ h2{
 
 #game .gameScreen .pirate img{
   background-color: transparent;
-  width: 65rem;
-  height: 65rem;
+  width: 65vw;
+  height: 120vh;
   cursor: pointer;
 }
 
 #game .gameScreen .pirate .detector{
   position: absolute;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 95%;
-  left: 60%;
+  width: 72.5vw;
+  height: 40.5vh;
+  top: 185vh;
+  left: 90vw;
+  transform: translate(-70%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game .gameScreen .pirate .detector2{
+  position: absolute;
+  width: 42.5vw;
+  height: 30.5vh;
+  top: 125vh;
+  left: 100vw;
   transform: translate(-70%, 0%);
   display: flex;
   justify-content: center;
@@ -1439,26 +677,34 @@ h2{
 }
 
 #game .gameScreen .bau{
-  position: relative;
-  width: calc(126rem / 6);
-  height: 18rem;
-  left: 43rem;
-  bottom: 43.2rem;
-  overflow: none;
-  background: url(assets/bau.png);
-  transform: scale(0.1);
+  border-radius: 0;
+  position: absolute;
+  width: 5vw ;
+  height: 5vh;
+  left: -3.7vw;
+  bottom: 77vh;
   cursor: pointer;
-  background-position: 4.5% 50%;
   z-index: 1;
+}
+
+
+#game .gameScreen .bau img{
+  position: absolute;
+  width: 5vw;
+  height: 9vh;
+  left: 26.2vw;
+  cursor: pointer;
+  z-index: 1;
+  transform: scale(1);
 }
 
 #game .gameScreen .chave{
   position: relative;
-  bottom: 68.8rem; 
+  bottom: 128.8vh; 
   background: transparent;
-  left: -20rem;
-  margin-top: 18rem;
-  transform: scale(0.06);
+  left: -35.5vw;
+  margin-top: 66rem;
+  transform: scale(0.13);
   overflow: none;
   z-index: 1;
 }

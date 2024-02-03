@@ -80,78 +80,44 @@ function atualizaCSS(texto, nivel) {
 
     let newX, newY;
    
+    const proporcaoX = 6.5; // Fator de proporção para o movimento horizontal
+    const proporcaoY = 11;
 
     switch (texto) {
         case "pirata.moverDireita(1);":
-            newX = parseFloat(campo.style.left || 2.2) + 1.7;
+            newX = parseFloat(campo.style.left || 1) + 6.5;
             break;
         case "pirata.moverEsquerda(1);":
-            newX = parseFloat(campo.style.left || 2.2) - 1.7;
+            newX = parseFloat(campo.style.left || 1) - 6.5;
             break;
         case "pirata.moverCima(1);":
-            newY = parseFloat(campo.style.top || 0.3) - 1.6;
+            newY = parseFloat(campo.style.top || 39) - 11;
             break;
         case "pirata.moverBaixo(1);":
-            newY = parseFloat(campo.style.top || 0.3) + 1.6;
+            newY = parseFloat(campo.style.top || 39) + 11;
             break;
         case "pirata.moverDireita(2);":
-            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 2;
+            newX = parseFloat(campo.style.left || 1) + proporcaoX * 2;
             break;
         case "pirata.moverEsquerda(2);":
-            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 2;
+            newX = parseFloat(campo.style.left || 1) - proporcaoX * 2;
             break;
         case "pirata.moverCima(2);":
-            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 2;
+            newY = parseFloat(campo.style.top || 39) - proporcaoY * 2;
             break;
         case "pirata.moverBaixo(2);":
-            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 2;
-            break;
-        case "pirata.moverDireita(3);":
-            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 3;
-            break;
-        case "pirata.moverEsquerda(3);":
-            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 3;
-            break;
-        case "pirata.moverCima(3);":
-            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 3;
-            break;
-        case "pirata.moverBaixo(3);":
-            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 3;
-            break;
-        case "pirata.moverDireita(4);":
-            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 4;
-            break;
-        case "pirata.moverEsquerda(4);":
-            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 4;
-            break;
-        case "pirata.moverCima(4);":
-            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 4;
-            break;
-        case "pirata.moverBaixo(4);":
-            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 4;
-            break;
-        case "pirata.moverDireita(5);":
-            newX = parseFloat(campo.style.left || 2.2) + 1.7 * 5;
-            break;
-        case "pirata.moverEsquerda(5);":
-            newX = parseFloat(campo.style.left || 2.2) - 1.7 * 5;
-            break;
-        case "pirata.moverCima(5);":
-            newY = parseFloat(campo.style.top || 0.3) - 1.6 * 5;
-            break;
-        case "pirata.moverBaixo(5);":
-            newY = parseFloat(campo.style.top || 0.3) + 1.6 * 5;
+            newY = parseFloat(campo.style.top || 39) + proporcaoY * 2;
             break;
         default:
             break;
     }
-
     if (newX !== undefined) {
-        campo.style.left = newX + "rem";
+        campo.style.left = newX + "vw";
     }
     if (newY !== undefined) {
-        campo.style.top = newY + "rem";
+        campo.style.top = newY + "vh";
     }
+
     let collisionDetected = false;
     for (const wall of walls) {
         const rect1 = detector.getBoundingClientRect();
@@ -169,8 +135,8 @@ function atualizaCSS(texto, nivel) {
     }
 
     if (collisionDetected) {
-        campo.style.left = "2.1rem"; 
-        campo.style.top = "0"; 
+        campo.style.left = "2.1vw";
+        campo.style.top = "0vh";
     }
 }
 
@@ -256,17 +222,22 @@ function verificaBau() {
     // Verificar se a chave está invisível antes de abrir o baú
     if (chave.style.opacity === "0") {
         var detector = document.querySelector('.detector');
+        var detector2 = document.querySelector('.detector2');
         var detectorRect = detector.getBoundingClientRect();
+        var detector2Rect = detector2.getBoundingClientRect();
         var bauRect = bau.getBoundingClientRect();
 
+        // Verificar colisão com qualquer um dos detectores
         if (
-            detectorRect.top < bauRect.bottom &&
-            detectorRect.bottom > bauRect.top &&
-            detectorRect.left < bauRect.right &&
-            detectorRect.right > bauRect.left
+            (detectorRect.top < bauRect.bottom &&
+             detectorRect.bottom > bauRect.top &&
+             detectorRect.left < bauRect.right &&
+             detectorRect.right > bauRect.left) ||
+            (detector2Rect.top < bauRect.bottom &&
+             detector2Rect.bottom > bauRect.top &&
+             detector2Rect.left < bauRect.right &&
+             detector2Rect.right > bauRect.left)
         ) {
-            bau.style.width = "calc(60 / 3)";
-            bau.style.backgroundPosition = "455% 50%";
             document.getElementById("titulo_sucess").textContent = `Parabéns, você concluiu o nível ${nivel_atual}!`;
 
             isTimerPaused = true;
