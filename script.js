@@ -135,8 +135,21 @@ function atualizaCSS(texto, nivel) {
     }
 
     if (collisionDetected) {
-        campo.style.left = "2.1vw";
-        campo.style.top = "0vh";
+        campo.style.left = "1vw";
+        campo.style.top = "39vh";
+
+
+        var bateuParede = document.getElementById('bateuParede');
+        
+        // Primeiro ajuste
+        bateuParede.style.opacity = "1";
+        bateuParede.style.zIndex = "5";
+  
+        // Após 1 segundo, desaparece novamente
+        setTimeout(function () {
+          bateuParede.style.opacity = "0";
+          bateuParede.style.zIndex = "0";  
+        }, 1000); // 1000 milissegundos = 1 segundo
     }
 }
 
@@ -164,7 +177,6 @@ function runAction(action) {
     }
 }
 
-// Adicionando um ouvinte de evento para o botão "Start"
 document.getElementById("run").addEventListener("click", function() {
     runAction('run');
 });
@@ -279,7 +291,7 @@ respNivel1.addEventListener("keydown", function(event){
 });
 
 
-let isTimerPaused = false; // Adicione essa variável global
+let isTimerPaused = false; 
 
 function startTimer() {
     if (!interval) {
